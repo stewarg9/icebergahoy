@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 class S3Uploader:
 
 	def __init__(self): 
-		Pass
+		pass
 
 	def upload_file(self, file_name, bucket, object_name=None):
 		"""Upload a file to an S3 bucket
