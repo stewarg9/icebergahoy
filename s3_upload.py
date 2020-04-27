@@ -9,7 +9,7 @@ class S3Uploader:
 	def __init__(self): 
 		Pass
 
-	def upload_file(file_name, bucket, object_name=None):
+	def upload_file(self, file_name, bucket, object_name=None):
 		"""Upload a file to an S3 bucket
 
 		:param file_name: File to upload
@@ -47,7 +47,9 @@ if __name__ == "__main__":
 
 	print(args)
 
-	result = upload_file(args["file_path"], args["bucket"])
+	loader = S3Uploader()
+	
+	result = loader.upload_file(args["file_path"], args["bucket"])
 
 	print(result)
 
