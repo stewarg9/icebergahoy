@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 	loader = S3Uploader()
 	
-	result = loader.upload_file(args["file_path"], args["bucket"])
+	result = loader.upload_file(args.file_path, args.bucket)
 
 	print(result)
 
